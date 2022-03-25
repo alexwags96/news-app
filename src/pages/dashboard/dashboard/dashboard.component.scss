@@ -1,0 +1,37 @@
+.example-card {
+  max-width: 400px;
+  margin-top: 10px;
+}
+
+.example-header-image {
+  background-image: url("../../../assets/images/News.jpg");
+  background-size: cover;
+  max-width: 400px;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: white;
+}
+//////////////////////////////////////
+.example-card {
+  max-width: 400px;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: white;
+}
+
+.mat-card-actions {
+  button {
+    // height: 100%;
+    // width: 110%;
+    color: rgba(0, 60, 255, 0.555);
+    background-color: aliceblue;
+  }
+}
+
+.loader {
+  margin-left: 40%;
+}

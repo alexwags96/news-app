@@ -1,0 +1,32 @@
+.menu {
+  display: flex;
+}
+
+.decal {
+  flex: 1 1 auto;
+}
+
+.example-header-image {
+  background-image: url("../../../../assets/images/societe.png");
+  background-size: cover;
+}
+//////////////////////////////////////
+.example-card {
+  max-width: 400px;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: white;
+}
+
+.mat-card-actions {
+  button {
+    color: rgba(0, 60, 255, 0.555);
+    background-color: aliceblue;
+  }
+}
+
+.loader {
+  margin-left: 40%;
+}

@@ -1,0 +1,42 @@
+<mat-toolbar color="secondary">
+  <button mat-button (click)="MenuRouter('/dashboard')">Accueil</button>
+
+  <button mat-button [matMenuTriggerFor]="aboveMenu">Sport</button>
+  <mat-menu #aboveMenu="matMenu" yPosition="above">
+    <button
+      mat-menu-item
+      *ngFor="let SPORT of SPORTS"
+      (click)="MenuRouter(SPORT.route)"
+    >
+      {{ SPORT.key }}
+    </button>
+  </mat-menu>
+
+  <button mat-button [matMenuTriggerFor]="belowMenu">Societe</button>
+  <mat-menu #belowMenu="matMenu" yPosition="below">
+    <button
+      mat-menu-item
+      *ngFor="let SOCIETE of SOCIETES"
+      (click)="MenuRouter(SOCIETE.route)"
+    >
+      {{ SOCIETE.key }}
+    </button>
+  </mat-menu>
+
+  <button mat-button [matMenuTriggerFor]="beforeMenu">Technologie</button>
+  <mat-menu #beforeMenu="matMenu" xPosition="before">
+    <button
+      mat-menu-item
+      *ngFor="let TECH of TECHS"
+      (click)="MenuRouter(TECH.route)"
+    >
+      {{ TECH.key }}
+    </button>
+  </mat-menu>
+
+  <div class="decalage"></div>
+
+  <button mat-button (click)="MenuRouter('/user')">A propos</button>
+</mat-toolbar>
+
+<router-outlet></router-outlet>
