@@ -10,7 +10,7 @@ export class NewsServiceService {
     const api_url =
       'https://newsapi.org/v2/everything?q=' +
       key +
-      '&sortBy=publishedAt&apiKey=51aff4e91f004a3887dc8d52120cdb37&language=fr&pageSize=' +
+      '&sortBy=publishedAt&apiKey=8598c6a2558244e0bb79172ab622e52c&language=fr&pageSize=' +
       number;
 
     return this.http.get(api_url);
